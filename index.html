@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESOURCES</title>
+    
+    <!-- Bootstrap 4 CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons (Optional) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Enhanced Background with Green Code Theme */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://img.freepik.com/free-vector/gold-luxury-background_52683-43998.jpg'); /* Replace with your preferred image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            color: #ffffff;
+        }
+
+        /* Dark Overlay to Enhance Readability */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+            z-index: -1;
+        }
+
+        /* Header Styles */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-section h1 {
+            font-size: 3rem;
+            color: #ffffff; /* Green color to match the theme */
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .header-section p {
+            font-size: 1.2rem;
+            color: #31d9df;
+            text-shadow: 1px 1px 2px #000000;
+        }
+
+        /* Two-Column Layout */
+        .dropdown-column {
+            margin-bottom: 30px;
+        }
+
+        /* Dropdown Button Styles */
+        .btn-primary {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            background-color: #00aaff;
+            border: none;
+        }
+
+        .btn-primary img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0088cc;
+            transform: translateY(-2px);
+        }
+
+        /* Dropdown Menu Styles */
+        .dropdown-menu {
+            z-index: 1000;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            background-color: #1a1a1a;
+        }
+
+        .dropdown-menu .dropdown-item {
+            font-size: 1rem;
+            padding: 10px 20px;
+            color: #ffffff;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .dropdown-column {
+                margin-bottom: 20px;
+            }
+
+            .btn-primary {
+                padding-left: 10px;
+            }
+
+            .btn-primary img {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+
+            .header-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .header-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>RESOURCES</h1>
+            <p>Click on the links below to navigate through the various pages:</p>
+        </div>
+
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-md-6">
+                <!-- Linux Dropdown -->
+                <div class="dropdown dropdown-column">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="linuxDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux Logo"> Linux
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="linuxDropdown">
+                        <a class="dropdown-item" href="Linux/Linux - eYRC 2024-25_ Warehouse Drone (WD).html">Linux Overview</a>
+                        <a class="dropdown-item" href="Linux/Linux File Permissions - eYRC 2024-25_ Warehouse Drone (WD).html">Linux File Permissions</a>
+                        <a class="dropdown-item" href="Linux/Linux Commands - eYRC 2024-25_ Warehouse Drone (WD).html">Linux Commands</a>
+                        <a class="dropdown-item" href="Linux/Linux File System Directories - eYRC 2024-25_ Warehouse Drone (WD).html">Linux File System Directories</a>
+                        <a class="dropdown-item" href="Linux/Example 1 - eYRC 2024-25_ Warehouse Drone (WD).html">Example 1</a>
+                        <a class="dropdown-item" href="Linux/Example 2 - eYRC 2024-25_ Warehouse Drone (WD).html">Example 2</a>
+                        <a class="dropdown-item" href="Linux/Shell Scripting - eYRC 2024-25_ Warehouse Drone (WD).html">Shell Scripting</a>
+                    </div>
+                </div>
+
+                <!-- ROS2 Dropdown -->
+                <div class="dropdown dropdown-column">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="ros2Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Ros_logo.svg" alt="ROS2 Logo"> ROS2
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="ros2Dropdown">
+                        <a class="dropdown-item" href="ROS2/ROS 2 - eYRC 2024-25_ Warehouse Drone (WD).html">ROS 2 Overview</a>
+                        <a class="dropdown-item" href="ROS2/ROS 2 Books - eYRC 2024-25_ Warehouse Drone (WD).html">ROS 2 Books</a>
+                        <a class="dropdown-item" href="ROS2/ROS 2 Concepts - eYRC 2024-25_ Warehouse Drone (WD).html">ROS 2 Concepts</a>
+                        <a class="dropdown-item" href="ROS2/ROS 2 Tutorials - eYRC 2024-25_ Warehouse Drone (WD).html">ROS 2 Tutorials</a>
+                        <a class="dropdown-item" href="ROS2/Turtlesim Resources - eYRC 2024-25_ Warehouse Drone (WD).html">Turtlesim Resources</a>
+                    </div>
+                </div>
+
+                <!-- C++ Dropdown -->
+                <div class="dropdown dropdown-column">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="cppDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo"> C++
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="cppDropdown">
+                        <a class="dropdown-item" href="C++/C++ - eYRC 2024-25_ Warehouse Drone (WD).html">C++ Overview</a>
+                        <a class="dropdown-item" href="C++/C++ Books - eYRC 2024-25_ Warehouse Drone (WD).html">C++ Books</a>
+                        <a class="dropdown-item" href="C++/C++ Tutorials - eYRC 2024-25_ Warehouse Drone (WD).html">C++ Tutorials</a>
+                    </div>
+                </div>
+
+                <!-- Python Dropdown -->
+                <div class="dropdown dropdown-column">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="pythonDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo"> Python
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="pythonDropdown">
+                        <a class="dropdown-item" href="Python/Python - eYRC 2024-25_ Warehouse Drone (WD).html">Python Overview</a>
+                        <a class="dropdown-item" href="Python/Python Tutorials - eYRC 2024-25_ Warehouse Drone (WD).html">Python Tutorials</a>
+                    </div>
+                </div>
+
+                <!-- Gazebo Dropdown -->
+                <div class="dropdown dropdown-column">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="gazeboDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Gazebo_logo.svg" alt="Gazebo Logo"> Gazebo
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="gazeboDropdown">
+                        <a class="dropdown-item" href="Gazebo & URDF/Gazebo & URDF - eYRC 2024-25_ Warehouse Drone (WD).html">Gazebo & URDF</a>
+                        <a class="dropdown-item" href="Gazebo & URDF/Gazebo Tutorials - eYRC 2024-25_ Warehouse Drone (WD).html">Gazebo Tutorials</a>
+                        <a class="dropdown-item" href="Gazebo & URDF/URDF ROS 2 - eYRC 2024-25_ Warehouse Drone (WD).html">URDF ROS 2</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Second Column -->
+                <div class="col-md-6">
+                    <!-- Quadcopter Dropdown -->
+                    <div class="dropdown dropdown-column">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="quadcopterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Drone.svg" alt="Quadcopter Logo"> Quadcopter
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="quadcopterDropdown">
+                            <a class="dropdown-item" href="Quadcopters/Understanding the Swift Pico model in gazebo simulator - eYRC 2024-25_ Warehouse Drone (WD).html">Swift Pico Model (Gazebo)</a>
+                        </div>
+                    </div>
+
+                    <!-- Control Systems Dropdown -->
+                    <div class="dropdown dropdown-column">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="controlSystemsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUPPSajimmIyB98REcDVoIakGuASGSr0LwuQ&s" alt="Control Systems Logo"> Control Systems
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="controlSystemsDropdown">
+                            <a class="dropdown-item" href="Control Systems/Control Systems - eYRC 2024-25_ Warehouse Drone (WD).html">Control Systems Overview</a>
+                            <a class="dropdown-item" href="Control Systems/PID Controller For Drones - eYRC 2024-25_ Warehouse Drone (WD).html">PID Controller For Drones</a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Dropdown -->
+                    <div class="dropdown dropdown-column">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="githubDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo"> GitHub
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="githubDropdown">
+                            <a class="dropdown-item" href="Github/Git and GitHub - eYRC 2024-25_ Warehouse Drone (WD).html">GitHub Overview</a>
+                        </div>
+                    </div>
+
+                    <!-- Image Processing Dropdown -->
+                    <div class="dropdown dropdown-column">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="imageProcessingDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://www.svgrepo.com/show/354139/opencv.svg" alt="Image Processing Logo"> Image Processing
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="imageProcessingDropdown">
+                            <a class="dropdown-item" href="Image Processing/Image Processing - eYRC 2024-25_ Warehouse Drone (WD).html">Image Processing Overview</a>
+                            <a class="dropdown-item" href="Image Processing/OpenCV Python - eYRC 2024-25_ Warehouse Drone (WD).html">OpenCV Python</a>
+                            <a class="dropdown-item" href="Image Processing/ROS-OpenCV - eYRC 2024-25_ Warehouse Drone (WD).html">ROS-OpenCV</a>
+                        </div>
+                    </div>
+
+                    <!-- Coding Standards Dropdown -->
+                    <div class="dropdown dropdown-column">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="codingStandardsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://www.svgrepo.com/show/216680/coding-browser.svg" alt="Coding Standards Logo"> Coding Standards
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="codingStandardsDropdown">
+                            <a class="dropdown-item" href="Coding Standard/Coding Standards - eYRC 2024-25_ Warehouse Drone (WD).html">Coding Standards Overview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (required by Bootstrap 4) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <!-- Popper.js (required for Bootstrap 4 tooltips and dropdowns) -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Bootstrap 4 JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
